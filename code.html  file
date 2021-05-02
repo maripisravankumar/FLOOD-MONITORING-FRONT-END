@@ -1,0 +1,222 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elite Coders | code</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="company-logo">
+                    <img  class="logo" src="./img/logo.jpg" alt="logo">
+                    <div class="tagline-container">
+                        <div class="company-name" style="font-size: 24px;">ELite Coders</div>
+                    <div class="tagline" style="font-size: 12px;">NASA Space Apps</div>
+                    </div>
+                    
+
+            </div>
+                            
+                     <div class="navbar" >
+                     <ul>
+                           
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="methodology.html">methodology</a></li>
+                        <li><a href="code.html">code</a></li>
+                        <li><a href="result.html">result</a></li>
+                        <li><a href="team.html">team</a></li>
+                     </ul>
+                  </div>
+                    <div class="toggle" >
+                        <span class="toggle-line line-1"></span>
+                        <span class="toggle-line line-2"></span>
+                        <span class="toggle-line line-3"></span>
+                    </div>     
+                    <!--- <div class="log-container" >
+                        <button class="sign-up" onclick="show()">Sign in</button>
+                       <button class="login">Login</button>
+                    </div>-->
+ 
+                <div style="clear:right;"></div>
+            </div>
+    </div>
+    
+    
+    <div class="sign-up-form">
+        <div>
+            <div class="sf">
+                <span style="font-size: 19px;width:fit-content;text-align:center;padding-top:5px;padding-bottom:5px;display:block;border-bottom:3px solid green;color:rgb(14,12,10);">Sign In Form</span>
+
+            </div>
+            <button class="sign-up-close" id="close">x</button>
+        </div>
+        
+        <form action="#">
+             
+            <label for="uname">Username</label>
+            <input type="text" placeholder="User Name" required="true" id="uname" >
+            <label for="uemail">Email Address</label>
+            <input type="email" id="uemail" placeholder="Email Address" required="true">
+            <label for="pwd1">Password</label>
+            <input type="password" id="pwd1" placeholder="Password">
+
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" id="pwd2" placeholder="Confirm Password">
+
+            <input type="submit" value="Sign up">
+
+        </form>
+    </div>
+    <div class="code">
+        <div class="code-layout">
+            <h2>Code Description</h2>
+        <div class="code-description">
+            Here we have predicited Rainfall statistics in our country (India) based on the dataset which contains data of rainfall in each states. we used some of the libraries in python like pandas , numpy , matplotlib , sklearn,seaborn,etc. for preprocessing the data from dataset , performing mathematical and numerical calculations on the preprocessed data and plotted graphs among various data. we have predicited the states with more amount of rainfall.
+            <br> The dataset used in our rainfall predicition is  <a href="https://github.com/sriharidas/dataset.git">dataset</a>. It contains the annual rainfall data in each states from January to December.
+            
+        </div>
+        
+        <!----
+        <div class="code-container">
+            <div style="white-space:pre-wrap;line-height:1.5;">
+                import pandas as pd
+                import numpy as np
+                from sklearn import linear_model
+                import matplotlib.pyplot as plt
+                import seaborn as sns
+                from subprocess import check_output
+                df = pd.read_csv(r'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit)\chanflood.csv')
+                df.info()
+                df.dropna(how='any', inplace=True)
+                subdivs = df['SUBDIVISION'].unique()
+                num_of_subdivs = subdivs.size
+                print('Total # of Subdivs: ' + str(num_of_subdivs))
+                subdivs
+                df.groupby('SUBDIVISION').mean().sort_values(by='ANNUAL', ascending=False)['ANNUAL'].plot('bar', color='Y',width=0.9,title='Subdivision wise Average Annual Rainfall', fontsize=20)
+                plt.xticks(rotation = 90)   			  
+                plt.xticks(np.linspace(0,35,36,endpoint=True))                                                 
+                plt.xticks(fontsize="small")
+                plt.ylabel('Average Annual Rainfall (mm)')
+                #fig = plt.figure(figsize=(8,8))
+                #ax = fig.add_subplot(222)
+                ax.title.set_fontsize(5)
+                ax.xaxis.label.set_fontsize(5)
+                ax.yaxis.label.set_fontsize(5)
+                print(df.groupby('SUBDIVISION').mean().sort_values(by='ANNUAL', ascending=False)['ANNUAL'][[0,1,1]])
+                print(df.groupby('SUBDIVISION').mean().sort_values(by='ANNUAL', ascending=False)['ANNUAL'][[33,34,35]])
+                plt.show()
+                <br>
+                import matplotlib.pyplot as plt
+                import pandas as pd
+                import numpy as np
+                import seaborn as sns
+                from subprocess import check_output
+                df = pd.read_csv(r'C:\Users\User_2\Downloads\chanflood.csv')
+                months = df.columns[2:14]
+                fig = plt.figure(figsize=(18,10))
+                ax = fig.add_subplot(221)
+                df.groupby('YEAR').mean()[months].plot.line(title='Overall Rainfall in Each Month of Year', ax=ax,fontsize=20)
+                #plt.xticks(np.linspace(0,35,36,endpoint=True),xlbls)
+                plt.xticks(  rotation = 90)
+                plt.ylabel('Rainfall (mm)')
+                plt.legend(loc='Best', fontsize = 'xx-large')
+                ax.title.set_fontsize(30)
+                ax.xaxis.label.set_fontsize(20)
+                ax.yaxis.label.set_fontsize(20)
+                plt.show()
+                <br>
+                import pandas as pd
+                import numpy as np
+                from sklearn import linear_model
+                import matplotlib.pyplot as plt
+                import seaborn as sns
+                from subprocess import check_output
+                df = pd.read_csv(r'C:\Users\User_2\Downloads\chanflood.csv')
+                fig = plt.figure(figsize=(16,10))
+                ax = fig.add_subplot(222)
+                dfg = df.groupby('YEAR').sum()['ANNUAL']
+                dfg.plot('line', title='Overall Rainfall in Each Year', fontsize=20)
+                plt.ylabel('Overall Rainfall (mm)')
+                ax.title.set_fontsize(30)
+                ax.xaxis.label.set_fontsize(20)
+                ax.yaxis.label.set_fontsize(20)
+                print('Max: ' + str(dfg.max()) + ' ocurred in ' + str(dfg.loc[dfg == dfg.max()].index.values[0:]))
+                print('Min: ' + str(dfg.min()) + ' ocurred in ' + str(dfg.loc[dfg == dfg.min()].index.values[0:]))
+                print('Mean: ' + str(dfg.mean()))
+                plt.show()
+                <br>
+                import pandas as pd
+                import numpy as np
+                from sklearn import linear_model
+                import matplotlib.pyplot as plt
+                import seaborn as sns
+                from subprocess import check_output
+                df = pd.read_csv(r'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit)\chanflood.csv')
+                fig = plt.figure(figsize=(16,10))
+                ax = fig.add_subplot(111)
+                dfg = df.groupby('VOLUME').sum()['DISTANCE']
+                dfg.plot('line', title='VOLUME OF DAM VS WATER LEVEL', fontsize=20)
+                plt.ylabel('height of water level (cm)')
+                plt.xlabel('volume of water')
+                ax.title.set_fontsize(30)
+                ax.xaxis.label.set_fontsize(20)
+                ax.yaxis.label.set_fontsize(20)
+                print('Max: ' + str(dfg.max()) + ' ocurred in ' + str(dfg.loc[dfg == dfg.max()].index.values[0:]))
+                print('Min: ' + str(dfg.min()) + ' ocurred in ' + str(dfg.loc[dfg == dfg.min()].index.values[0:]))
+                print('Mean: ' + str(dfg.mean()))
+                plt.show()
+        </div></div>-->
+        <div class="result-container">
+            <h2 class="sub-title" style="margin:10px auto 30px auto;">Code</h2>
+            <div>
+                <img src="./img/code-1.jpg" alt="">
+
+            </div>
+            
+         
+            <div>
+                <img src="./img/code-2.jpg" alt="">
+                
+            </div>
+            <div>
+                <img src="./img/code-3.jpg" alt="">
+                
+            </div>
+            <div>
+                <img src="./img/code-4.jpg" alt="">
+                
+            </div>
+            <h2 class="sub-title" style="margin:10px auto 30px auto;">Overall Code</h2>
+            <div>
+                <img src="./img/code5.jpg" alt="">
+                    </div>
+                
+            </div>
+        <div style="margin:15px auto;width:fit-content;">click here for the output... <a href="result.html">Go to result</a></div>
+    </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-logo">
+            <div> <img src="./img/logo.jpg" alt="logo">  
+
+            </div> 
+            <div>
+                <span style="font-size:23px;">Elite Coders</span>
+                <span style="font-size:10px;">NASA Space Apps</span>
+            </div>
+        
+        </div>
+        <div class=".footer-info">
+            NASA Space Apps CHallenge 2020
+        </div>
+        
+
+    </div>
+    <script src="./source/file.js"></script>
+</body>
+</html>
