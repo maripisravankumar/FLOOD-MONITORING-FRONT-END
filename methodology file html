@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elite Coders | Methodology</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="company-logo">
+                    <img  class="logo" src="./img/logo.jpg" alt="logo">
+                    <div class="tagline-container">
+                        <div class="company-name" style="font-size: 24px;">ELite Coders</div>
+                    <div class="tagline" style="font-size: 12px;">NASA Space Apps</div>
+                    </div>
+                    
+
+            </div>
+                            
+                     <div class="navbar" >
+                     <ul>
+                           
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="methodology.html">methodology</a></li>
+                        <li><a href="code.html">code</a></li>
+                        <li><a href="result.html">result</a></li>
+                        <li><a href="team.html">team</a></li>
+                     </ul>
+                  </div>
+                    <div class="toggle" >
+                        <span class="toggle-line line-1"></span>
+                        <span class="toggle-line line-2"></span>
+                        <span class="toggle-line line-3"></span>
+                    </div>     
+                     <!---<div class="log-container" >
+                        <button class="sign-up" onclick="show()">Sign in</button>
+                       <button class="login">Login</button>
+                    </div>-->
+ 
+                <div style="clear:right;"></div>
+            </div>
+    </div>
+    
+    
+    <div class="sign-up-form">
+        <div>
+            <div class="sf">
+                <span style="font-size: 19px;width:fit-content;text-align:center;padding-top:5px;padding-bottom:5px;display:block;border-bottom:3px solid green;color:rgb(14,12,10);">Sign In Form</span>
+
+            </div>
+            <button class="sign-up-close" id="close">x</button>
+        </div>
+        
+        <form action="#">
+             
+            <label for="uname">Username</label>
+            <input type="text" placeholder="User Name" required="true" id="uname" >
+            <label for="uemail">Email Address</label>
+            <input type="email" id="uemail" placeholder="Email Address" required="true">
+            <label for="pwd1">Password</label>
+            <input type="password" id="pwd1" placeholder="Password">
+
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" id="pwd2" placeholder="Confirm Password">
+
+            <input type="submit" value="Sign up">
+
+        </form>
+    </div>
+
+    <div class="methodology">
+        <div class="methodology-container">
+        <h2 class="title">methodology</h2>
+            <p>
+                 we have used the Rainfall dataset in India from the Kaggle for predicting the
+                rainfall at different parts of the country at a particular time based upon the seasons. Granularity is on a
+                monthly basis and this data is taken from 36- meteorological subdivisions located in India, where the
+                amount of rainfall is being measured in Millimeters(mm).Using Machine Learning(ML) models we
+                have predicted the future rainfall of India in different places.
+            </p>
+
+<h2 class="sub-title">Machine Learning Algorithms</h2>
+<p>
+    In our project, we have used machine learning algorithms such as linear regression/logistic regression,
+    support vector machine (SVM), matplotlib for plotting the graphs.
+</p>
+<h2 class="sub-title">Linear/Logistic Regression</h2>
+<p>
+    
+Linear regression is used to determine or identify the relationships between two
+columns/variables in a dataset. Logistic regression is used for analyzing a dataset that has one
+independent variable or more. The results obtained from analyzing the variables are either 0s
+or 1s/true or false.
+
+</p>
+<h2 class="sub-title"> Support Vector Machine (SVM)</h2>
+<p>
+    
+   
+The support vector machine is used for classification between any set of groups present in the
+dataset. The objective of the SVM is to draw the best fit line which is used to differentiate
+between two different classes or groups present in the dataset.
+    
+    </p>
+    <h2 class="sub-title">Matplotlib</h2>
+    <p>
+        
+        Matplotlib is the library which can be used for creating visualization by plotting graphs
+        where we can differentiate the rainfall rate based on states when the rain occurs & further
+        differentiates the quantity of the rainfall of each city at each month
+        
+        </p>
+<div><img src="./img/method1.jpg" alt=""></div>
+<h2 class="title">Hardware Modules</h2>
+<p>
+    
+    The required hardware modules are the sensors, microcontroller and the materials for
+    power supply. The objective of these hardware components is to control and measure the
+    pressure of water. It collects the data on water level and the information is stored in the cloud
+    through the communication of WIFI and the data is being enabled to pass the information
+    through the internet.
+</p>
+
+
+<h2 class="sub-title">Microcontroller</h2>
+    <p>
+        The microcontroller helps in processing the information which is being fetched
+from the sensors and this information is being sent to the admin through
+the medium of the cloud
+        </p>
+    <h2 class="sub-title">Sensors</h2>
+    <p>
+        
+        The sensors which help to give the information to the microcontroller from various
+        nodes located at a different place. The sensors that are required for this project are as follows:
+        <b style="color: rgb(230, 99, 12);">The ultrasonic sensor</b>-This sensor is used to measure the level of the water and the
+        average rainfall that is being occurred at a particular place. If water level strikes at a
+        particular level it emits very high frequency so these echo signals are reflected in the sensors
+        and it gives an alert message to the microcontroller and send the information to the cloud.
+        <b style="color: rgb(230, 99, 12);" >The ultrasonic sensor</b> consists of 4-pin. The 4-pins are used to measure water level, trigger,
+        ground connection & the last current.
+        <b style="color: rgb(230, 99, 12);">Pressure sensor</b> - BMP Barometric sensor is used to identify the atmospheric pressure
+        present inside the water.
+        <b style="color: rgb(230, 99, 12);">Humidity sensor</b> - DHT11 sensor works on the principle of one wire protocol which
+        identifies the climatic changes and the humidity which gives us the output in a digital format.
+        </p>
+       
+
+<h2 class="sub-title"> Power Supply</h2>
+    <p>
+        High energy of power supply is not needed, so the current we get in the AC power
+supply is being converted to the DC power supply and it can be used in the implementation.
+        </p>
+<h2 class="sub-title">Database Module</h2>
+<p>
+    The values that are being fetched by the microcontrollers from the sensors are sent to
+    the cloud via WIFI. The cloud will have the access of all the registered users. This stored
+    data is being redirected to the websites where the users can access the information about the
+    condition of flood occurring .
+</p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <div> <img src="./img/logo.jpg" alt="logo">  
+
+            </div> 
+            <div>
+                <span style="font-size:23px;">Elite Coders</span>
+                <span style="font-size:10px;">NASA Space Apps</span>
+            </div>
+        
+        </div>
+        <div class=".footer-info">
+            NASA Space Apps Challenge 2020
+        </div>
+
+    </div>
+    <script src="./source/file.js"></script>
+    </body> 
+    </html>
