@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ELite Coders | result</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="company-logo">
+                    <img  class="logo" src="./img/logo.jpg" alt="logo">
+                    <div class="tagline-container">
+                        <div class="company-name" style="font-size: 24px;">ELite Coders</div>
+                    <div class="tagline" style="font-size: 12px;">NASA Space Apps</div>
+                    </div>
+                    
+
+            </div>
+                            
+                     <div class="navbar" >
+                     <ul>
+                           
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="methodology.html">methodology</a></li>
+                        <li><a href="code.html">code</a></li>
+                        <li><a href="result.html">result</a></li>
+                        <li><a href="team.html">team</a></li>
+                     </ul>
+                  </div>
+                    <div class="toggle" >
+                        <span class="toggle-line line-1"></span>
+                        <span class="toggle-line line-2"></span>
+                        <span class="toggle-line line-3"></span>
+                    </div>     
+                    <!--- <div class="log-container" >
+                        <button class="sign-up" onclick="show()">Sign in</button>
+                       <button class="login">Login</button>
+                    </div>-->
+ 
+                <div style="clear:right;"></div>
+            </div>
+    </div>
+    
+    
+    <div class="sign-up-form">
+        <div>
+            <div class="sf">
+                <span style="font-size: 19px;width:fit-content;text-align:center;padding-top:5px;padding-bottom:5px;display:block;border-bottom:3px solid green;color:rgb(14,12,10);">Sign In Form</span>
+
+            </div>
+            <button class="sign-up-close" id="close">x</button>
+        </div>
+        
+        <form action="#">
+             
+            <label for="uname">Username</label>
+            <input type="text" placeholder="User Name" required="true" id="uname" >
+            <label for="uemail">Email Address</label>
+            <input type="email" id="uemail" placeholder="Email Address" required="true">
+            <label for="pwd1">Password</label>
+            <input type="password" id="pwd1" placeholder="Password">
+
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" id="pwd2" placeholder="Confirm Password">
+
+            <input type="submit" value="Sign up">
+
+        </form>
+    </div>
+
+    <div class="result">
+            <h2 class="title">Results</h2>
+        <div class="result-container">
+            <h2 class="sub-title" style="margin:10px auto 30px auto;">Prototype</h2>
+            <div>
+                <img src="./img/result-1.PNG" alt="">
+                <div class="result-description">Fig 2. Consist of Node Mcu, Digital output for displaying the humidity, speaker for the siren, ultrasonic sensor. The threshold limit set is 7mm so whenever it reaches the limit the gates will open and siren occurs.</div>
+
+            </div>
+            <h2 class="sub-title" style="margin:10px auto 30px auto;">Rainfall Prediction</h2>
+         
+            <div>
+                <img src="./img/result-2.PNG" alt="">
+                <div class="result-description">The algorithm used here is bar plot using Matplotlib library to the subdivision wise average rainfall vs. subdivision wise states. The above graph defines the maximum amount of rainfall that occurs always in Andaman Nicobar Islands, Assam, and Meghalaya, Arunachal Pradesh, Bihar, Chhattisgarh. The minimum amount of rainfall occurs in Uttar Pradesh, Rajasthan, Madhya Pradesh, and Uttarakhand.</div>
+                
+            </div>
+            <div>
+                <img src="./img/result-3.PNG" alt="">
+                <div class="result-description">Scatter plot is being used to find the rainfall in each month of each year, using the matplot library it is found that the amount of Rainfall was increased every year in July.</div>
+                
+            </div>
+            <div>
+                <img src="./img/result-4.PNG.jpg" alt="">
+                <div class="result-description">By analyzing the Rainfall data the amount of rainfall in each state with respective months was plotted. In every state of India the maximum amount of rainfall occurred in the month of July. More amount of Rainfall was in Arunachal Pradesh, Karnataka, Madhya Pradesh, and less amount of rainfall in the states of Bihar, Punjab, and Odisha.</div>
+                
+            </div>
+            <div>
+                <img src="./img/result-5.PNG" alt="">
+                <div class="result-description">Using pyplot library we can easily analyze that the rate of rainfall was increased in the year of 1961. Rainfall rate was increasing rapidly compared to last few years from these Data Analysis reports. The average amount of rainfall was in the range of 50000 to 55000, the graph represents the overall rainfall analysis each year.
+                    In the existing system the authors have used the parameters based on the drainage system which may lead to some errors and some have connected to the Bluetooth so the message passing to the people becomes difficult. In this article the parameters are taken using the rainfall and predict the accurate rainfall at a place of the country and sending the alert information through the website dashboard stating the gates are being opened
+                    </div>
+                
+            </div>
+            <div>
+                <img src="./img/result.jpg" alt="">
+                
+            </div>
+           
+
+        </div>
+        <h2 class="sub-title" style="margin:10px auto 30px auto;">Conclusion</h2>
+        <div style="width:80%;margin:auto;padding:15px 25px;">
+            In recent times, India has faced many natural disasters. Due to the floods, it causes heavy damages to properties, wild life’s and huge loss of human lives. This problem can be overcome by a proper flood monitoring system integrated with Machine Learning and IoT. The proposed system can be used for better monitoring of water levels in dams. If the flood occurs, it easily communicates the information to the nearby people.  The implemented communication systems and transmission technologies are more efficient and can easily adapt to the background technologies. The proposed methodology has increased efficiency and accuracy for the prediction of floods, and even it gives good efficiency at critical conditions. Overall this proposed system would be advantageous for the people to get enough time to evacuate from the flood-prone areas before the flood occurs.
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <div> <img src="./img/logo.jpg" alt="logo">  
+
+            </div> 
+            <div>
+                <span style="font-size:23px;">Elite Coders</span>
+                <span style="font-size:10px;">NASA Space Apps</span>
+            </div>
+        
+        </div>
+        <div class=".footer-info">
+            NASA Space Apps CHallenge 2020
+        </div>
+
+    </div>
+    <script src="./source/file.js"></script>
+    </body>  </html>
