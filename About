@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elite Coders | About</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="company-logo">
+                    <img  class="logo" src="./img/logo.jpg" alt="logo">
+                    <div class="tagline-container">
+                        <div class="company-name" style="font-size: 24px;">ELite Coders</div>
+                    <div class="tagline" style="font-size: 12px;">NASA Space Apps</div>
+                    </div>
+                    
+
+            </div>
+                            
+                     <div class="navbar" >
+                     <ul>
+                           
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="methodology.html">methodology</a></li>
+                        <li><a href="code.html">code</a></li>
+                        <li><a href="result.html">result</a></li>
+                        <li><a href="team.html">team</a></li>
+                     </ul>
+                  </div>
+                    <div class="toggle" >
+                        <span class="toggle-line line-1"></span>
+                        <span class="toggle-line line-2"></span>
+                        <span class="toggle-line line-3"></span>
+                    </div>     
+                     <!---<div class="log-container" >
+                        <button class="sign-up" onclick="show()">Sign in</button>
+                       <button class="login">Login</button>
+                    </div>-->
+ 
+                <div style="clear:right;"></div>
+            </div>
+    </div>
+    
+    
+    <div class="sign-up-form">
+        <div>
+            <div class="sf">
+                <span style="font-size: 19px;width:fit-content;text-align:center;padding-top:5px;padding-bottom:5px;display:block;border-bottom:3px solid green;color:rgb(14,12,10);">Sign In Form</span>
+
+            </div>
+            <button class="sign-up-close" id="close">x</button>
+        </div>
+        
+        <form action="#">
+             
+            <label for="uname">Username</label>
+            <input type="text" placeholder="User Name" required="true" id="uname" >
+            <label for="uemail">Email Address</label>
+            <input type="email" id="uemail" placeholder="Email Address" required="true">
+            <label for="pwd1">Password</label>
+            <input type="password" id="pwd1" placeholder="Password">
+
+            <label for="pwd2">Confirm Password</label>
+            <input type="password" id="pwd2" placeholder="Confirm Password">
+
+            <input type="submit" value="Sign up">
+
+        </form>
+    </div>
+    <div class="about">
+        <div class="about-container">
+             <h2 class="title">Introduction</h2>
+             <p>Data Analysis is a process of understanding and evaluating data based on visual interpretations
+                like graphs [1].IoT is a system of interconnected devices which are able to collect and transfer data
+                using a wireless network without human intervention. The IoT is the combination of
+                sub-methodologies like wireless sensor networks and it is the mode to connect all the devices by
+                sensors and monitored through the internet . </p>
+              <!--h2 class="title">Image processing</h2>  -->  
+                <p>
+                    In this era, numerous data-driven procedures are being applied to massive quantities of data
+                    produced in order to obtain significant benefits. Machine Learning algorithms were used on those data
+                    to obtain the results like prediction/ forecasting                </p> 
+                <div><img src="./img/about1.jpg" alt=""></div>
+               <!----<h2 class="title">Types Of Image Processing</h2> -->
+                <p>
+                    Digital Image Processing strategies assist in manipulation of the virtual pix via way of means of the use of computers. As uncooked information from imaging sensors from satellite tv for pc platform consists of deficiencies. To recover from such flaws and to get originality of data, it has to go through diverse levels of processing. The 3 preferred levels that every one varieties of information should go through even as the use of virtual approach are Pre- processing, enhancement and display, data extraction.
+                    </p>
+                <!--<h2 class="sub-title">Image enhancement</h2>-->
+                <p>India is a peninsular country, with tremendous climatic form. The rainfall may vary in different
+                    parts of the country. Many parts of the country will have heavy rainfall and result in floods. Due to
+                    flood, the water bodies will reach their maximum limit within a short period of time. It causes serious
+                    danger to the wild lives and human beings if the water bodies were not monitored and maintained
+                    properly</p>
+                <!--<h2 class="sub-title">Image restoration</h2>-->
+                <p>an efficient solution for opening the shutters of the dam when the water
+                    reaches the threshold limit has been emphasized with the help of modern technology - IoT using
+                    sensors. To develop this efficient solution, we have to perform three steps: Data collection for
+                    analysis, data processing, collection of hardware and software tools required for the project &
+                    spreading the alert message called flood warning to the people. These automated flood warning
+                    systems are usually inexpensive and they are always easy to implement. The primary factor for
+                    implementing these kinds of projects is cost and fortunately these automated flood warning systems
+                    are inexpensive so they can be implemented at a large scale and it can save lots of lives</p>
+                <!--<h2 class="sub-title">Image compression</h2>--->
+                <p>Rainfall dataset in India, sub-division wise monthly data for 115 years from 1901-2019, which is
+                    taken from the Kaggle. According to the dataset, every year at least two states are severely damaged
+                    due to floods. So to overcome this, a flood monitoring system will be useful for the people affected
+                    due to floods</p>
+                <p>This study focuses on predicting the flood earlier using the rainfall dataset and providing alert
+                    messages (via websites/mobile application & iOS applications/text messages) to the communities who
+                    live near the dams/lakes/rivers. These IoT sensors used here is an ultrasonic sensor which is used to
+                    measure the level of the water in the dam in real-time. The level of water is the most important
+                    parameter to predict the flood occurrence in natural disaster occurring places. The ultrasonic sensor
+                    can be used to detect the water level and, in the case, that water level reaches above the threshold limit
+                    it provides alert messages which also spread through social media. The data fetched from the water
+                    level sensor is constantly stored in a cloud server. This measurement of water level is displayed in a
+                    dashboard remotely so the people can easily monitor the water level wherever they live. This proposed
+                    solution can also be used to monitor the inner quality of water. The alert messages and relevant data
+                    regarding the level of water are transmitted to the cloud server and then it will be received by the
+                    consumers who are being owned through the user terminal.</p>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <div> <img src="./img/logo.jpg" alt="logo">  
+
+            </div> 
+            <div>
+                <span style="font-size:23px;">Elite Coders</span>
+                <span style="font-size:10px;">NASA Space Apps</span>
+            </div>
+        
+        </div>
+        <div class=".footer-info">
+            NASA Space Apps CHallenge 2020
+        </div>
+    </div>
+    <script src="./source/file.js"></script>
+    </body> 
+    </html>
